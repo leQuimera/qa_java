@@ -43,9 +43,9 @@ public class AnimalTesting {
         try {
             animal.getFood("Всеядное");
             fail("Ожидаемое исключение не было вызвано");
-        } catch (Exception e) {
+        } catch (Exception expt) {
             assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник",
-                    e.getMessage());
+                    expt.getMessage());
         }
     }
 
