@@ -4,7 +4,8 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import java.util.List;
-import static org.junit.Assert.assertEquals;
+
+import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
 public class AnimalTesting {
@@ -37,9 +38,18 @@ public class AnimalTesting {
     }
 
     // Test throw exception
+    @Test
+    public void validateGetFoodWith() {
+        try {
+            animal.getFood("Всеядное");
+            fail("Ожидаемое исключение не было вызвано");
+        } catch (Exception e) {
+            assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник",
+                    e.getMessage());
+        }
+    }
 
-    // Empty Entrance
-
+    // Valid answer for family
     @Test
     public void validateGetFamilyPositiveValue() {
         String expected = "Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи";
