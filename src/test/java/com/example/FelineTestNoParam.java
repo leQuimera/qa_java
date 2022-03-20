@@ -7,22 +7,7 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class FelineTest {
-
-    private final int counter;
-
-    public FelineTest(int counter) {
-        this.counter = counter;
-    }
-
-    @Parameterized.Parameters
-    public static Object[][] setCounter() {
-        return new Object[][]{
-                {-1},
-                {0},
-                {1},
-        };
-    }
+public class FelineTestNoParam {
 
     Feline feline = new Feline();
 
@@ -50,12 +35,4 @@ public class FelineTest {
         assertEquals(expected,actual);
     }
 
-    // Return itself 0
-    // Return itself 1
-    // Return itself -1
-    @Test
-    public void validateGetKittensWithTestDataSet() {
-        int actual = feline.getKittens(counter);
-        assertEquals(counter, actual);
-    }
 }
