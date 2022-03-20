@@ -8,7 +8,7 @@ import java.util.List;
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
-public class AnimalTesting {
+public class AnimalTest {
 
     private final String animalType;
     private final List<String> permissibleFood;
@@ -16,7 +16,7 @@ public class AnimalTesting {
 
     Animal animal = new Animal();
 
-    public AnimalTesting(String animalType, List<String> permissibleFood) {
+    public AnimalTest(String animalType, List<String> permissibleFood) {
         this.animalType = animalType;
         this.permissibleFood = permissibleFood;
     }

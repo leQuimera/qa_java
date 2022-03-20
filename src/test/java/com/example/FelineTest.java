@@ -8,11 +8,11 @@ import java.util.List;
 import static org.junit.Assert.assertEquals;
 
 @RunWith(Parameterized.class)
-public class FelineTesting {
+public class FelineTest {
 
     private final int counter;
 
-    public FelineTesting(int counter) {
+    public FelineTest(int counter) {
         this.counter = counter;
     }
 
