@@ -4,7 +4,6 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
@@ -12,7 +11,6 @@ public class AnimalTest {
 
     private final String animalType;
     private final List<String> permissibleFood;
-
 
     Animal animal = new Animal();
 
