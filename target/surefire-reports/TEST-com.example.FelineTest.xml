@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<testsuite tests="12" failures="0" name="com.example.FelineTest" time="0.001" errors="0" skipped="0">
+<testsuite tests="12" failures="0" name="com.example.FelineTest" time="0.003" errors="0" skipped="0">
   <properties>
     <property name="java.runtime.name" value="OpenJDK Runtime Environment"/>
     <property name="java.vm.version" value="11.0.12+7"/>
@@ -65,16 +65,16 @@
     <property name="sun.desktop" value="windows"/>
     <property name="sun.cpu.isalist" value="amd64"/>
   </properties>
-  <testcase classname="com.example.FelineTest" name="validateEatMeal[0]" time="0"/>
+  <testcase classname="com.example.FelineTest" name="validateEatMeal[0]" time="0.001"/>
   <testcase classname="com.example.FelineTest" name="validateGetFamily[0]" time="0"/>
   <testcase classname="com.example.FelineTest" name="validateGetKittensWithTestDataSet[0]" time="0"/>
   <testcase classname="com.example.FelineTest" name="validateGetKittensIfParameterAbsent[0]" time="0"/>
-  <testcase classname="com.example.FelineTest" name="validateEatMeal[1]" time="0.001"/>
-  <testcase classname="com.example.FelineTest" name="validateGetFamily[1]" time="0"/>
+  <testcase classname="com.example.FelineTest" name="validateEatMeal[1]" time="0"/>
+  <testcase classname="com.example.FelineTest" name="validateGetFamily[1]" time="0.001"/>
   <testcase classname="com.example.FelineTest" name="validateGetKittensWithTestDataSet[1]" time="0"/>
   <testcase classname="com.example.FelineTest" name="validateGetKittensIfParameterAbsent[1]" time="0"/>
   <testcase classname="com.example.FelineTest" name="validateEatMeal[2]" time="0"/>
   <testcase classname="com.example.FelineTest" name="validateGetFamily[2]" time="0"/>
-  <testcase classname="com.example.FelineTest" name="validateGetKittensWithTestDataSet[2]" time="0"/>
+  <testcase classname="com.example.FelineTest" name="validateGetKittensWithTestDataSet[2]" time="0.001"/>
   <testcase classname="com.example.FelineTest" name="validateGetKittensIfParameterAbsent[2]" time="0"/>
 </testsuite>
