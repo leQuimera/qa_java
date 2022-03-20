@@ -11,7 +11,6 @@ import static org.junit.Assert.assertEquals;
 
 @RunWith(MockitoJUnitRunner.class)
 public class CatTest {
-
     @Mock
     Feline feline;
 

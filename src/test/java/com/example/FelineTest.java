@@ -58,5 +58,4 @@ public class FelineTest {
         int actual = feline.getKittens(counter);
         assertEquals(counter, actual);
     }
-
 }

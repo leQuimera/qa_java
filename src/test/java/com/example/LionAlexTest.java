@@ -43,5 +43,4 @@ public class LionAlexTest {
         int actual = lionAlex.getKittens();
         assertEquals(expected, actual);
     }
-
 }

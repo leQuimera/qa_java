@@ -54,5 +54,4 @@ public class AnimalTest {
         String actual = animal.getFamily();
         assertEquals(expected, actual);
     }
-
 }
