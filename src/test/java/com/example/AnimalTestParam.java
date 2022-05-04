@@ -4,19 +4,16 @@ import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.junit.runners.Parameterized;
 import java.util.List;
-
 import static org.junit.Assert.*;
 
 @RunWith(Parameterized.class)
-public class AnimalTest {
-
+public class AnimalTestParam {
     private final String animalType;
     private final List<String> permissibleFood;
 
-
     Animal animal = new Animal();
 
-    public AnimalTest(String animalType, List<String> permissibleFood) {
+    public AnimalTestParam(String animalType, List<String> permissibleFood) {
         this.animalType = animalType;
         this.permissibleFood = permissibleFood;
     }
@@ -35,26 +32,6 @@ public class AnimalTest {
     public void validateGetFoodPositiveValue() throws Exception{
         List <String> actualListOfFood = animal.getFood(animalType);
         assertEquals(permissibleFood, actualListOfFood);
-    }
-
-    // Test throw exception
-    @Test
-    public void validateGetFoodWith() {
-        try {
-            animal.getFood("Всеядное");
-            fail("Ожидаемое исключение не было вызвано");
-        } catch (Exception expt) {
-            assertEquals("Неизвестный вид животного, используйте значение Травоядное или Хищник",
-                    expt.getMessage());
-        }
-    }
-
-    // Valid answer for family
-    @Test
-    public void validateGetFamilyPositiveValue() {
-        String expected = "Существует несколько семейств: заячьи, беличьи, мышиные, кошачьи, псовые, медвежьи, куньи";
-        String actual = animal.getFamily();
-        assertEquals(expected, actual);
     }
 
 }
